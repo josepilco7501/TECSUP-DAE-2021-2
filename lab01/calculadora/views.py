@@ -14,16 +14,16 @@ def sumar(request,n1,n2):
 
 def restar(request,n1,n2):
     resultado=n1-n2 
-    responsive=("La suma de ",n1 ,"-" ,n2 ," es : ",resultado)
+    responsive=("La resta de ",n1 ,"-" ,n2 ," es : ",resultado)
     return HttpResponse(responsive)
 
 def multiplicar(request,n1,n2):
     resultado=n1*n2 
-    responsive=("La suma de ",n1 ,"*" ,n2 ," es : ",resultado)
+    responsive=("El producto de ",n1 ,"*" ,n2 ," es : ",resultado)
     return HttpResponse(responsive)
 
 def dividir(request,n1,n2):
     resultado=n1/n2 
-    responsive=("La suma de ",n1 ,"/" ,n2 ," es : ",resultado)
+    responsive=("El cociente de ",n1 ,"/" ,n2 ," es : ",resultado)
     return HttpResponse(responsive)
 
